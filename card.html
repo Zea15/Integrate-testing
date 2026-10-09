@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Card Stub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .inventory-container {
+      max-width: 600px;
+      width: 100%;
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      background-color: #fafafa;
+    }
+    .item-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1a73e8;
+    }
+    .item-desc {
+      color: #555555;
+      margin: 8px 0;
+    }
+    .author-info {
+      margin-top: 12px;
+      padding: 10px;
+      background-color: #e8f0fe;
+      border-left: 4px solid #1a73e8;
+      border-radius: 4px;
+    }
+    .author-name {
+      font-weight: bold;
+      color: #174ea6;
+    }
+    .price-btn-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+    .btn {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="inventory-container">
+    <h1>Stub Inventory List</h1>
+    
+    <div class="card inventory_item" data-test="inventory-card">
+      <div class="item-name" data-test="item-name">Sauce Labs Backpack (Stub)</div>
+      <div class="item-desc" data-test="item-desc">
+        carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+      </div>
+      <div class="author-info" data-test="author-info">
+        ผู้พัฒนา / ผู้ดูแล: <span class="author-name" data-test="student-name">นายณัฏฐ์ชพงศ์ ใจพงษ์</span>
+      </div>
+      <div class="price-btn-box">
+        <span class="price" data-test="item-price">$29.99</span>
+        <button class="btn" data-test="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
